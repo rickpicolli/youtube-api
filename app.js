@@ -228,7 +228,9 @@ function resetResults(){
   // var query = "linkin park"
   var query = $("#search").val();
   var artistId;
+
   function getID(){
+    console.log(query);
     
     $.ajax({
         url: `https://cors-anywhere.herokuapp.com/https://api.spotify.com/v1/search?q=${query}&type=artist`,
