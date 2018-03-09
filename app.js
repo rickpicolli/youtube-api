@@ -231,7 +231,7 @@ function resetResults(){
 
   function getID(){
 
-    $("#submit").on("click", function(){
+    // $("#submit").on("click", function(){
       var query = $("#search").val();
     console.log(query);
     
