@@ -230,6 +230,9 @@ function resetResults(){
   var artistId;
 
   function getID(){
+
+    $("#submit").on("click", function(){
+      var query = $("#search").val();
     console.log(query);
     
     $.ajax({
@@ -243,6 +246,7 @@ function resetResults(){
         }
     })
   }
+}
   function getSong(){
     $.ajax({
         url: `https://cors-anywhere.herokuapp.com/https://api.spotify.com/v1/artists/${artistID}/top-tracks?country=US`,
